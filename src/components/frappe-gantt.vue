@@ -53,15 +53,16 @@ export default {
                     this.$emit('task-progress-updated', { task, progress });
                 },
 
-                // I doubt you will ever need this as the developer already knows what view mode they set.
-                // on_view_change: (mode) => {
-                //     this.$emit('view-mode-updated', mode);
-                // }
+                //I doubt you will ever need this as the developer already knows what view mode they set.
+                on_view_change: (mode) => {
+                    this.$emit('view-mode-updated', mode);
+                }
             });
 
             this.updateTasks();
             this.updateViewMode();
         },
+
         updateViewMode () {
             this.gantt.change_view_mode(this.viewMode[0].toUpperCase() + this.viewMode.substring(1));
         },

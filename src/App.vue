@@ -1,17 +1,21 @@
 <template>
     <div id="app">
         <h1>Vue.js + Frappe Gannt Demo</h1>
+        <button @click="demoViewMode('day')">Day View Mode</button>
+        <button @click="demoViewMode('week')">Week View Mode</button>
+        <button @click="demoViewMode('month')">Month View Mode</button>
         <frappe-gantt
             :view-mode="mode"
             :tasks="tasks"
             @task-updated="debugEventLog.push($event)"
             @task-date-updated="debugEventLog.push($event)"
-            @on_progress_change="debugEventLog.push($event)" />
-        <h3>TODO: When the Frappe Chart component emits task changes from user clicking or dragging make sure to then update the task list passed in via prop</h3>
+            @task-progress-change="debugEventLog.push($event)" />
+        <h3>TODO: When the Frappe Chart component emits task changes from user clicking or dragging make sure to then update the task list passed in via prop (App.vue)</h3>
         <button @click="addRandomTask">
             Add
         </button>
         <div>
+            <h5>These are the events being emitted by the Vue.js component wrapper for Frappe Gantt</h5>
             <ul>
                 <li
                     v-for="event in debugEventLog"
@@ -82,6 +86,9 @@ export default {
                 end: '2019-01-05',
                 progress: Math.random() * 100,
             });
+        },
+        demoViewMode (viewMode) {
+            this.mode = viewMode;
         }
     }
 };
