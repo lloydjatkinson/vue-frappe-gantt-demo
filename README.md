@@ -1,5 +1,7 @@
 # vue-frappe-gantt-demo
 
+This is a demonstration of wrapping third party libraries in a Vue component. In this case it is a component wrapping [https://frappe.io/gantt](https://frappe.io/gantt)
+
 ## Project setup
 ```
 npm install
