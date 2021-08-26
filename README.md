@@ -1,6 +1,6 @@
 # vue-frappe-gantt-demo
 
-Find thid useful? If I get enough funding I will implement and publish a Vue 3 Gantt component - I get a lot of interest and questions about making this demo a real component.
+Find this useful? If I get enough funding I will implement and publish a Vue 3 Gantt component - I get a lot of interest and questions about making this demo a real component.
 
 <a href="https://www.buymeacoffee.com/lloyd" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 25px !important; width: 100px !important;" ></a>
 
