@@ -1,3 +1,6 @@
+> **Warning**
+> I no longer wish to work with Vue or maintain any Vue projects I have created due to growing frustration with the DX, the dev tooling situation, and it's community. Therefore this repository is unmaintained and archived.
+
 # vue-frappe-gantt-demo
 
 Find this useful? If I get enough funding I will implement and publish a Vue 3 Gantt component - I get a lot of interest and questions about making this demo a real component.
